@@ -1,0 +1,98 @@
+.form-title {
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--color-primary-white);
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 32px;
+    }
+}
+
+.form-title--color {
+    color: var(--color-primary-blue);
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.form-input {
+    width: 240px;
+    border-radius: 32px;
+    border: 2px solid var(--color-secondary-lightgrey);
+    padding: 16px 24px;
+    background-color: var(--color-secondary-darkblue);
+
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0;
+
+    @media screen and (min-width: 1280px) {
+        width: 310px;
+    }
+}
+
+.form-input:focus {
+    border: 2px solid var(--color-secondary-lightgrey);
+    background-color: var(--color-secondary-lightgrey);
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: var(--color-primary-white);
+}
+
+.form-button {
+    display: block;
+    margin: 0 auto 8px;
+    padding: 12px 24px;
+    border-radius: 32px;
+    border: 2px solid var(--color-primary-blue);
+    background-color: var(--color-primary-blue);
+    color: var(--color-primary-white);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.17;
+    cursor: pointer;
+
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0;
+
+    @media screen and (min-width: 480px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 16px 32px;
+    }
+}
+
+.form-button:hover {
+    background-color: transparent;
+    color: var(--color-primary-blue);
+}
+
+.form-text {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-secondary-lightgrey);
+}
+
+.form-policy {
+    color: var(--color-secondary-lightgrey);
+}

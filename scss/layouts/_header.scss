@@ -1,0 +1,129 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 0;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.25);
+
+    @media screen and (min-width: $bp-mobile) {
+        padding: 16px 0;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 24px 0;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        padding: 32px 0;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__nav {
+        display: flex;
+        flex-grow: 1;
+    }
+    
+    &__logo {
+        font-family: Play;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1;
+        color: var(--color-primary-blue);
+        text-decoration: none;
+    
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 18px;
+        }
+    
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 22px;
+        }
+    }
+    
+    &__nav-list {
+        display: none;
+    
+        @media screen and (min-width: $bp-desktop) {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            margin: 0 auto;
+            gap: 56px;
+        }
+    }
+    
+    &__nav-link {
+        text-decoration: none;
+        color: var(--color-primary-darkblue);
+    
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+        transition-delay: 0;
+    }
+    
+    &__nav-link:hover {
+        color: var(--color-primary-blue);
+    }
+    
+    &__contacts-list {
+        display: none;
+        
+        @media screen and (min-width: $bp-desktop) {
+            display: flex;
+            gap: 32px;
+        }
+    }
+    
+    &__contacts-icon {
+        fill: var(--color-primary-darkblue);
+    
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+        transition-delay: 0;
+    }
+    
+    &__contacts-icon:hover {
+        fill: var(--color-primary-blue)
+    }
+    
+    &__burger-btn {
+        padding: 0;
+        margin: 0;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        fill: var(--color-primary-white);
+    
+        @media screen and (min-width: $bp-tablet) {
+            width: 36px;
+            height: 36px;
+        }
+    
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
+    }
+    
+    &__icon-burger-menu {
+        width: 32px;
+        height: 32px;
+        fill: var(--color-primary-white);
+    
+        @media screen and (min-width: $bp-tablet) {
+            width: 36px;
+            height: 36px;
+        }
+    }
+}

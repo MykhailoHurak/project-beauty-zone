@@ -1,0 +1,107 @@
+.mob-menu {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 20px;
+    background-color: var(--color-primary-white);
+
+    transform: translateX(100%);
+    transition: transform 0.2s;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 32px 30px;
+    }
+
+    &.is-open {
+        transform: translateX(0);
+    }
+    
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+    
+    &__logo {
+        font-family: Play;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1;
+        color: var(--color-primary-blue);
+        text-decoration: none;
+    
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 18px;
+        }
+    }
+    
+    &__btn-close {
+        padding: 0;
+        margin: 0;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+    
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
+    }
+    
+    &__icon-close {
+        width: 32px;
+        height: 32px;
+        fill: var(--color-primary-darkblue);
+    }
+    
+    &__nav-list {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        margin: 0 auto 22px;
+        gap: 16px;
+    
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 18px;
+            gap: 22px;
+        }
+    }
+    
+    &__nav-link {
+        text-decoration: none;
+        color: var(--color-primary-darkblue);
+    
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+        transition-delay: 0;
+    }
+    
+    &__nav-link:hover {
+        color: var(--color-primary-blue);
+    }
+    
+    &__contacts-list {
+        display: flex;
+        gap: 16px;
+    }
+    
+    &__contacts-icon {
+        fill: var(--color-primary-darkblue);
+    
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+        transition-delay: 0;
+    }
+    
+    &__contacts-icon:hover {
+        fill: var(--color-primary-blue)
+    }
+}

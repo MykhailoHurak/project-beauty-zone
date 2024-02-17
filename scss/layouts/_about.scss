@@ -1,0 +1,142 @@
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        scale: 1;
+    }
+
+    50% {
+        scale: 2;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        scale: 1;
+    }
+}
+
+.about {
+    &__box {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+
+        @media screen and (min-width: $bp-mobile) {
+            justify-content: center;
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            justify-content: space-between;
+        }
+    }
+
+    &__box::after {
+        position: absolute;
+        top: 140px;
+        right: 20px;
+        content: url(../images/about-star-3.png);
+        z-index: 1;
+    
+        animation-name: spin;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 1.17;
+
+        @media screen and (min-width: $bp-mobile) {
+            text-align: center;
+            max-width: 400px;
+        }
+        
+        @media screen and (min-width: $bp-tablet) {
+            text-align: left;
+            font-size: 20px;
+        }
+    
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 22px;
+            line-height: 1.73;
+        }
+    }
+
+    &__text--margin {
+        margin-bottom: 16px;
+    
+        @media screen and (min-width: $bp-tablet) {
+            margin-bottom: 28px;
+        }
+    
+        @media screen and (min-width: $bp-desktop) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__text--font {
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+    
+    &__content {
+        max-width: 700px;
+    
+        @media screen and (min-width: $bp-tablet) {
+            padding-top: 20px;
+        }
+    
+        @media screen and (min-width: $bp-desktop) {
+            padding-top: 40px;
+        }
+    }
+    
+    &__image {
+        display: none;
+    
+        @media screen and (min-width: $bp-tablet) {
+            display: block;
+            max-width: 260px;
+        }
+    
+        @media screen and (min-width: $bp-desktop) {
+            max-width: 500px;
+        }
+    }
+    
+    &__image-box {
+        display: none;
+        position: relative;
+    
+        @media screen and (min-width: $bp-tablet) {
+            display: block;
+        }
+    }
+    
+    &__image-box::before {
+        position: absolute;
+        top: 20px;
+        right: -20px;
+        content: url(../images/about-star-2.png);
+        z-index: 1;
+    
+        animation-name: spin;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    &__image-box::after {
+        position: absolute;
+        top: 300px;
+        right: 150px;
+        content: url(../images/about-star-1.png);
+        z-index: 1;
+    
+        animation-name: spin;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+}

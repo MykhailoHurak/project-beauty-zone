@@ -1,0 +1,63 @@
+/* Fonts ------------------------------------- */
+
+@import './utils/fonts';
+
+/* Variables --------------------------------- */
+
+@import './utils/variables';
+
+/* Base -------------------------------------- */
+
+@import './base';
+
+/* visually-hidden --------------------------- */
+
+@import './utils/utils';
+
+/* Container --------------------------------- */
+
+@import './components/container';
+
+/* Section ----------------------------------- */
+
+@import './components/section';
+
+/* Forms ------------------------------------- */
+
+@import './components/forms';
+
+/* Mobile Menu ------------------------------- */
+
+@import './layouts/mob-menu';
+
+/* Header ------------------------------------ */
+
+@import './layouts/header';
+
+/* Hero -------------------------------------- */
+
+@import './layouts/hero';
+
+/* About ------------------------------------- */
+
+@import './layouts/about';
+
+/* Advantages -------------------------------- */
+
+@import './layouts/advantages';
+
+/* Procedures -------------------------------- */
+
+@import './layouts/procedures';
+
+/* Contacts ---------------------------------- */
+
+@import './layouts/contacts';
+
+/* Footer ------------------------------------ */
+
+@import './layouts/footer';
+
+/* Modal ------------------------------------- */
+
+@import './layouts/modal';
